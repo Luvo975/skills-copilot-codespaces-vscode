@@ -1,0 +1,250 @@
+body                        {font-family:Arial,sans-serif; font-size:12;background-color: whitesmoke;}
+P.title                     {font-size: 15; font-weight: bold; color: black;}
+.hero-title                 {color: white;}
+.hero                       {background: #2D6A4F;        /* green background */padding: 5rem 80px;         /* breathing room */display: grid;              /* splits into two columns */grid-template-columns: 1fr 1fr;  /* left and right equal */gap: 4rem;                  /* space between columns */align-items: center;        /* vertically centered */position: relative;         /* needed for the circles */overflow: hidden;           /* hides circles outside edges */}
+/* Big soft circle top right */
+.hero::before               {content: '';position: absolute;top: -60px;right: -60px;width: 400px;height: 400px;border-radius: 50%;background: rgba(244,162,97,0.08); /* faint amber */}
+/* Smaller circle bottom */
+.hero::after                {content: '';position: absolute;bottom: -80px;left: 20%;width: 300px;height: 300px;border-radius: 50%;background: rgba(255,255,255,0.04); /* faint white */}
+.hero-tag                   {display: inline-block;font-size: 11px;letter-spacing: 1.5px;text-transform: uppercase;padding: 5px 14px;border-radius: 999px;         /* makes it a pill shape */border: 1px solid rgba(244,162,97,0.5);color: #F4A261;               /* amber text */margin-bottom: 1.25rem;}
+.hero-visual                {background: rgba(255,255,255,0.06);  /* faint white box */border: 1px solid rgba(255,255,255,0.12);border-radius: 20px;height: 365px;display: flex;align-items: center;justify-content: center;}
+/* Fix the Join the movement button */
+.btn-primary                {display: inline-block;padding: 13px 28px;background: #F4A261;     /* amber background */color: #fff;border-radius: 999px;text-decoration: none;   /* removes underline */font-size: 14px;font-weight: 500;}
+.founder                    {display: grid;grid-template-columns: 1fr 1fr;  /* two equal columns */gap: 4rem; /* space between image and text */align-items: center;/* vertically centered */padding: 4rem 80px;background: whitesmoke;}
+/* Fix the Learn more button */
+.btn-outline                {display: inline-block;padding: 13px 28px;border: 1px solid rgba(255,255,255,0.4);color: #fff;border-radius: 999px;text-decoration: none;   /* removes underline */font-size: 14px;}
+.hero-desc                  {color: rgba(255,255,255,0.75);  /* light white */font-size: 15px;line-height: 1.8;margin-bottom: 2rem;}
+.problem                    {display: grid;grid-template-columns: 1fr 1fr;  /* two equal columns */gap: 4rem;                        /* space between image and text */align-items: center;              /* vertically centered */padding: 4rem 80px;background: whitesmoke;}
+.problem-list               {display: flex;flex-direction: column;gap: 10px;margin-top: 1rem;}
+.problem-item               {display: flex;align-items: flex-start;gap: 10px;}
+.problem-dot                {width: 8px;height: 8px;border-radius: 50%;        /* makes it a circle */background: #F4A261;       /* amber colour */flex-shrink: 0;            /* stops it from shrinking */margin-top: 6px;           /* aligns with text */}
+.stats                      {display: grid;grid-template-columns: repeat(4, 1fr); /* 4 equal columns */background: whitesmoke;                   /* slightly darker cream */border-bottom: 1px solid rgba(45,106,79,0.1);}
+.stat                       {padding: 1.75rem;text-align: center;border-right: 1px solid rgba(45,106,79,0.1); /* divider line */}
+.stat:last-child            {border-right: none; /* removes last divider */}
+.stat-num                   {font-family: 'Playfair Display', serif;font-size: 34px;color: #2D6A4F;      /* forest green */font-weight: 600;}
+.stat-num span              {color: #F4A261;      /* amber for the + symbol */}
+.stat-label                 {font-size: 12px;color: #5a7a5a;      /* muted green */margin-top: 4px;}
+.pillars                    {padding: 0.5rem 10px;background: whitesmoke;       /* cream background */}
+.pillars-grid               {display: grid;grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */gap: 20px;margin-top: 0.25rem;background-color: whitesmoke;}
+.pillar                     {background: #fff;border: 1px solid rgba(45,106,79,0.1);border-radius: 20px;padding: 2rem;transition: transform 0.2s, border-color 0.2s;background-color: whitesmoke;}
+.pillar:hover               {transform: translateY(-4px);  /* lifts up on hover */border-color: #2D6A4F;background-color: whitesmoke;}
+.pillar-icon                {width: 50px;height: 50px;border-radius: 14px;display: flex;align-items: center;justify-content: center;font-size: 24px;margin-bottom: 0.25rem;background-color: whitesmoke;}
+.pillar-title               {font-size: 16px;font-weight: 500;color: #2D6A4F;margin-bottom: 1px;background-color: whitesmoke;}
+.pillar-desc                {font-size: 13px;color: #5a7a5a;line-height: 1.7; background-color: whitesmoke;}
+.section-title              {margin-bottom: 0.5rem;  /* ← reduce this to pull cards closer */}
+.pillars-grid               {margin-top: 0.25rem;}
+.mission-quote              {font-family: 'Playfair Display', serif;font-size: 26px;color: #2D6A4F;line-height: 1.7;max-width: 700px;margin: 0 auto 1rem;font-style: italic;}
+.mission-quote span         {color: #F4A261;            /* amber highlights */}
+.mission-attr               {font-size: 13px;color: rgba(255,255,255,0.5);}
+.founder                    {display: grid;grid-template-columns: 1.6fr 1fr; /* text wider, image narrower */gap: 4rem;align-items: center;padding: 4rem 80px;background: #fff;}
+.mv                         {background: #2D6A4F;        /* green background */padding: 5rem 80px;display: grid;grid-template-columns: 1fr 1fr;  /* two equal cards */gap: 2rem;align-items: start;}
+.mv-card                    {background: rgba(255,255,255,0.07);   /* faint white card */border: 1px solid rgba(255,255,255,0.15);border-radius: 16px;padding: 2.5rem;}
+.mv-label                   {font-size: 11px;font-weight: 500;letter-spacing: 1.5px;text-transform: uppercase;color: #F4A261;              /* amber label */margin-bottom: 1rem;}
+.mv-title                   {font-family: 'Playfair Display', serif;font-size: 28px;color: #fff;                 /* white title */margin-bottom: 1rem;line-height: 1.3;}
+.mv-body                    {font-size: 14px;color: rgba(255,255,255,0.75);  /* soft white text */line-height: 1.8;}
+.mv-body span               {color: #F4A261;              /* amber highlights */font-weight: 500;}
+/* ── FOOTER ── */
+footer                      {background: #1a4a36;           /* dark green background */padding: 3rem 80px 1.5rem;}
+.footer-top                 {display: grid;grid-template-columns: 2fr 1fr 1fr 1fr;  /* 4 columns */gap: 3rem;margin-bottom: 2.5rem;}
+.footer-brand h2            {font-family: 'Playfair Display', serif;font-size: 22px;font-weight: 600;color: #fff;margin-bottom: 6px;}
+.footer-brand h2 span       {color: #F4A261;                /* amber & symbol */}
+.footer-brand p             {font-size: 13px;color: rgba(255,255,255,0.5);line-height: 1.7;margin-top: 8px;max-width: 240px;}
+.footer-col h4              {font-size: 12px;font-weight: 500;letter-spacing: 1px;text-transform: uppercase;color: #F4A261;                /* amber headings */margin-bottom: 1rem;}
+.footer-col ul              {list-style: none;padding: 0;display: flex;flex-direction: column;gap: 8px;}
+.footer-col ul a            {text-decoration: none;font-size: 13px;color: rgba(255,255,255,0.55);transition: color 0.2s;}
+.footer-col ul a:hover      {color: #F4A261;               /* amber on hover */}
+.footer-bottom              {border-top: 1px solid rgba(255,255,255,0.08);padding-top: 1.5rem;display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;gap: 8px;}
+.footer-bottom p            {font-size: 12px;color: rgba(255,255,255,0.3);}
+.page-hero                  {background: #2D6A4F;          /* green background */padding: 5rem 80px;text-align: center;position: relative;overflow: hidden;             /* hides the circles */}
+/* big circle top right */
+.page-hero::before          {content: '';position: absolute;top: -80px;right: -80px;width: 400px;height: 400px;border-radius: 50%;background: rgba(244,162,97,0.07);}
+/* smaller circle bottom left */
+.page-hero::after           {content: '';position: absolute;bottom: -80px;left: 10%;width: 300px;height: 300px;border-radius: 50%;background: rgba(255,255,255,0.06);}
+/* the pill tag at the top */
+.hero-tag                   {display: inline-block;font-size: 11px;font-weight: 500;letter-spacing: 1.5px;text-transform: uppercase;padding: 5px 14px;border-radius: 999px;border: 1px solid rgba(244,162,97,0.5);color: #F4A261;margin-bottom: 1.25rem;}
+/* the big headline */
+.page-hero h1               {font-family: 'Playfair Display', serif;font-size: 52px;color: #fff;line-height: 1.2;margin-bottom: 1rem;position: relative;z-index: 1;             /* sits above the circles */font-weight: 600;}
+/* the amber italic span */
+.page-hero h1 span          {color: #F4A261;font-style: italic;}
+/* the description paragraph */
+/* ── PAGE HERO ── */
+.page-hero p                { font-size: 15px; color: rgba(255,255,255,0.75); line-height: 1.8; max-width: 580px; margin: 0 auto; position: relative; z-index: 1; }
+
+/* ── DISCLAIMER ── */
+.disclaimer                 { background: #fff; padding: 2rem 80px; text-align: center; border-bottom: 1px solid rgba(45,106,79,0.1); }
+.disclaimer p               { font-size: 13px; color: #5a7a5a; line-height: 1.8; max-width: 620px; margin: 0 auto; }
+.disclaimer-note            { font-size: 13px; color: #2D6A4F; font-style: italic; margin-top: 8px !important; }
+
+/* ── CASE CARD ── */
+.case-card-full             { background: #fff; border: 1px solid rgba(45,106,79,0.12); border-radius: 20px; overflow: hidden; margin-bottom: 2.5rem; }
+
+/* ── CASE HEADER ── */
+.case-header                { padding: 2rem 2.5rem; display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid rgba(45,106,79,0.08); }
+.case-num                   { font-size: 11px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: #F4A261; margin-bottom: 0.5rem; }
+.case-headline              { font-family: 'Playfair Display', serif; font-size: 26px; color: #2D6A4F; line-height: 1.3; margin-bottom: 0.4rem; }
+.case-subtitle              { font-size: 13px; color: #5a7a5a; font-style: italic; margin-bottom: 1rem; }
+.case-tags                  { display: flex; gap: 8px; flex-wrap: wrap; }
+.case-tag                   { font-size: 12px; padding: 4px 14px; border-radius: 999px; border: 1px solid rgba(45,106,79,0.2); color: #2D6A4F; background: #e8f5ee; }
+.case-tag.amber             { background: #fef3ea; border-color: rgba(244,162,97,0.3); color: #e08030; }
+.case-avatar                { width: 70px; height: 70px; border-radius: 50%; background: #e8f5ee; display: flex; align-items: center; justify-content: center; font-size: 32px; flex-shrink: 0; }
+
+/* ── CASE BODY GRID ── */
+.case-body-grid             { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-bottom: 1px solid rgba(45,106,79,0.08); }
+.case-col                   { padding: 2rem 2.5rem; }
+.case-col:first-child       { border-right: 1px solid rgba(45,106,79,0.08); }
+.case-col-label             {font-size: 11px;font-weight: 500;letter-spacing: 1.5px;text-transform: uppercase;color: #F4A261;margin-bottom: 1rem;}
+.case-col-body              {font-size: 14px;color: #5a7a5a;line-height: 1.8;margin-bottom: 1rem;}
+/* BOTTOM QUOTE */
+.case-quote-banner          {background: #2D6A4F;padding: 2.5rem;text-align: center;}
+.case-quote-banner p        {font-family: 'Playfair Display', serif;font-size: 18px;color: #fff;line-height: 1.7;max-width: 680px;margin: 0 auto 0.75rem;font-style: italic;}
+.case-quote-banner p span   {color: #F4A261;font-style: italic;}
+.case-quote-attr            {font-size: 13px;color: rgba(255,255,255,0.6);}
+.suffer-alone               {background: #2D6A4F;padding: 5rem 80px;text-align: center;position: relative;overflow: hidden;}
+/* decorative circle */
+.suffer-alone::before       {content: '';position: absolute;top: -80px;right: -80px;width: 350px;height: 350px;border-radius: 50%;background: rgba(244,162,97,0.07);}
+.suffer-line                {width: 48px;height: 3px;background: #F4A261;border-radius: 2px;margin: 0 auto 2rem;}
+.suffer-title               {font-family: 'Playfair Display', serif;font-size: 38px;color: #fff;margin-bottom: 1.25rem;position: relative;z-index: 1;}
+.suffer-desc                {font-size: 15px;color: rgba(255,255,255,0.75);line-height: 1.8;max-width: 620px;margin: 0 auto 2.5rem;position: relative;z-index: 1;}
+.suffer-points              {display: flex;flex-direction: column;gap: 14px;max-width: 560px;margin: 0 auto 2.5rem;text-align: left;position: relative;z-index: 1;}
+.suffer-point               {display: flex;align-items: flex-start;gap: 12px;background: rgba(255,255,255,0.07);border: 1px solid rgba(255,255,255,0.12);border-radius: 12px;padding: 1rem 1.25rem;}
+.suffer-dot                 {width: 8px;height: 8px;border-radius: 50%;background: #F4A261;flex-shrink: 0;margin-top: 6px;}
+.suffer-point span          {font-size: 14px;color: rgba(255,255,255,0.85);line-height: 1.6;}
+.suffer-btn                 {display: inline-block;padding: 13px 32px;background: #F4A261;color: #fff;border-radius: 999px;text-decoration: none;font-size: 14px;font-weight: 500;transition: 0.2s;position: relative;z-index: 1;margin-bottom: 2rem;}
+.suffer-btn:hover           {background: #e08030;}
+.faq                        {padding: 4.5rem 80px;background: #fff;}
+.faq-grid                   {display: grid;grid-template-columns: 1fr 1fr;  /* two columns */gap: 16px;margin-top: 2.5rem;}
+.faq-item                   {background: #F9F3E3;             /* cream background */border: 1px solid rgba(45,106,79,0.1);border-radius: 16px;padding: 1.5rem;transition: border-color 0.2s;}
+.faq-item:hover             {border-color: #2D6A4F;}
+.faq-q                      {font-size: 15px;font-weight: 500;color: #2D6A4F;margin-bottom: 8px;line-height: 1.4;}
+.faq-a                      {font-size: 13px;color: #5a7a5a;line-height: 1.7;}
+.branches                   {padding: 4.5rem 80px;background: #F9F3E3;         /* cream background */}
+.branches-grid              {display: grid;grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */gap: 20px;margin-top: 2.5rem;}
+.branch-card                {background: #fff;border: 1px solid rgba(45,106,79,0.1);border-radius: 20px;padding: 1.75rem;transition: transform 0.2s, border-color 0.2s;}
+.branch-card:hover          {transform: translateY(-4px);border-color: #F4A261;}
+/* HQ tag — salmon/pink colour */
+.branch-tag                 {display: inline-block;font-size: 11px;font-weight: 500;letter-spacing: 1px;text-transform: uppercase;padding: 4px 12px;border-radius: 999px;background: #e8f5ee;         /* green light */color: #2D6A4F;margin-bottom: 0.75rem;}
+/* Headquarters tag — amber colour */
+.branch-tag.hq              {background: #fef3ea;         /* amber light */color: #e08030;}
+.branch-name                {font-size: 20px;font-weight: 500;color: #2D6A4F;margin-bottom: 6px;}
+.branch-address             {font-size: 13px;color: #5a7a5a;line-height: 1.6;margin-bottom: 14px;}
+.branch-detail              {display: flex;align-items: flex-start;gap: 8px;font-size: 13px;color: #5a7a5a;margin-bottom: 6px;line-height: 1.5;}
+/* The orange dot */
+.branch-dot                 {width: 8px;height: 8px;border-radius: 50%;background: #F4A261;         /* amber dot */flex-shrink: 0;margin-top: 5px;}
+.contact-info               {display: flex; flex-direction: column;gap: 12px;}
+.info-card                  {background: #F9F3E3;           /* cream background */border: 1px solid rgba(45,106,79,0.1);border-radius: 14px;padding: 1.25rem 1.5rem;display: flex;align-items: flex-start;gap: 14px;transition: border-color 0.2s;}
+.info-card:hover            {border-color: #2D6A4F;/* green border on hover */}
+/* the coloured square icon */
+.info-icon                  {width: 44px;height: 44px;border-radius: 12px;display: flex;align-items: center;justify-content: center;font-size: 20px;flex-shrink: 0;/* stops it from shrinking */}
+/* small amber label at top */
+.info-label                 {font-size: 10px;font-weight: 500;letter-spacing: 1.2px;text-transform: uppercase;color: #F4A261;margin-bottom: 4px;}
+/* main value text */
+.info-value                 {font-size: 15px;font-weight: 500;color: #2D6A4F;margin-bottom: 3px;}
+/* small muted sub text */
+.info-sub                   {font-size: 12px;color: #5a7a5a;line-height: 1.5;}
+.values                     {padding: 4.5rem 80px;background: #fff;}
+.values-grid                {display: flex;flex-wrap: wrap;             /* wraps to next line */gap: 10px;margin-top: 2rem;}
+/* default pill — white background with green border */
+.value-pill                 {padding: 8px 18px;border: 1px solid rgba(45,106,79,0.2);border-radius: 999px;        /* pill shape */color: #2D6A4F;font-size: 13px;background: #fff;transition: all 0.2s;cursor: default;}
+.value-pill:hover           {background: #2D6A4F;color: #fff;border-color: #2D6A4F;}
+/* highlighted pill — amber background */
+.value-pill.highlight       {background: #fef3ea;border-color: rgba(244,162,97,0.4);color: #e08030;}
+.value-pill.highlight:hover {background: #F4A261;color: #fff;border-color: #F4A261;}
+.team                       {padding: 4.5rem 80px;background: #fff;}
+.team-photo                 {position: relative;border-radius: 20px;overflow: hidden;height: 2000px;        /* fixed height */width: 100%;          /* full width */margin-top: 2rem;background: #e8f5ee;}
+/* Remove this once you add your real photo */
+.team-placeholder           {font-size: 18px;color: #2D6A4F;font-weight: 500;opacity: 0.5;}
+/* Badge at the bottom of the photo */
+.team-badge                 {position: absolute;bottom: 20px;left: 50%;transform: translateX(-50%);background: rgba(45,106,79,0.9);color: #fff;font-size: 14px;font-weight: 500;padding: 10px 24px;border-radius: 999px;white-space: nowrap;}
+/* Stats row below photo */
+.team-stats                 {display: grid;grid-template-columns: repeat(4, 1fr);gap: 16px;margin-top: 2rem;}
+.team-stat                  {background: #F9F3E3;border: 1px solid rgba(45,106,79,0.1);border-radius: 16px;padding: 1.5rem;text-align: center;}
+.team-stat-num              {font-family: 'Playfair Display', serif;font-size: 36px;color: #2D6A4F;font-weight: 600;margin-bottom: 6px;}
+.team-stat-label            {font-size: 13px;color: #5a7a5a;}
+/* Quote below stats */
+.team-message               {text-align: center;margin-top: 3rem;}
+.team-message-line          {width: 48px;height: 3px;background: #F4A261;border-radius: 2px;margin: 0 auto 1.5rem;}
+.team-message-quote         {font-family: 'Playfair Display', serif;font-size: 20px;color: #2D6A4F;line-height: 1.7;max-width: 650px;margin: 0 auto 0.75rem;font-style: italic;}
+.team-message-attr          {font-size: 13px;color: #5a7a5a;}
+
+/* ── DONATE HERO ── */
+.donate-hero                { background: #F4A261; padding: 5rem 80px; text-align: center; position: relative; overflow: hidden; }
+.donate-hero::before        { content: ''; position: absolute; bottom: -80px; left: -60px; width: 380px; height: 380px; border-radius: 50%; background: rgba(255,255,255,0.08); }
+.donate-hero::after         { content: ''; position: absolute; top: -60px; right: -40px; width: 280px; height: 280px; border-radius: 50%; background: rgba(45,106,79,0.07); }
+.hero-tag                   { display: inline-block; font-size: 11px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; padding: 6px 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.6); color: #fff; margin-bottom: 1.5rem; }
+.donate-hero-title          { font-family: 'Playfair Display', serif; font-size: 54px; color: #fff; line-height: 1.2; margin-bottom: 1.25rem; position: relative; z-index: 1; max-width: 700px; margin-left: auto; margin-right: auto; }
+.donate-hero-title span     { color: #2D6A4F; font-style: italic; }
+.donate-hero-desc           { font-size: 15px; color: rgba(255,255,255,0.9); line-height: 1.8; max-width: 520px; margin: 0 auto; position: relative; z-index: 1; }
+
+/* ── DONATE SECTION ── */
+.donate-section             { padding: 4.5rem 80px; background: #fff; display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: center; }
+.donate-info .section-label { color: #F4A261; font-size: 11px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.5rem; }
+.donate-title               { font-family: 'Playfair Display', serif; font-size: 38px; color: #2D6A4F; line-height: 1.2; margin-bottom: 1rem; }
+.donate-desc                { font-size: 14px; color: #5a7a5a; line-height: 1.8; }
+
+/* ── AMOUNT BOX ── */
+.amount-box                 { background: #F9F3E3; border: 1px solid rgba(45,106,79,0.1); border-radius: 20px; padding: 2rem; }
+.amount-title               { font-size: 15px; font-weight: 500; color: #2D6A4F; margin-bottom: 1.25rem; }
+.amount-grid                { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 1.25rem; }
+.amount-btn                 { padding: 14px; border: 1.5px solid rgba(45,106,79,0.2); border-radius: 12px; background: #fff; font-size: 15px; font-weight: 500; color: #2D6A4F; cursor: pointer; transition: all 0.2s; font-family: 'Outfit', sans-serif; }
+.amount-btn:hover           { background: #2D6A4F; color: #fff; border-color: #2D6A4F; }
+.amount-btn.selected        { background: #2D6A4F; color: #fff; border-color: #2D6A4F; }
+.amount-custom              { display: flex; align-items: center; gap: 12px; margin-bottom: 1.25rem; }
+.amount-custom label        { font-size: 13px; color: #5a7a5a; white-space: nowrap; }
+.amount-custom input        { flex: 1; border: 1.5px solid rgba(45,106,79,0.2); border-radius: 10px; padding: 10px 14px; font-size: 14px; font-family: 'Outfit', sans-serif; background: #fff; outline: none; color: #1a2e1a; }
+.amount-custom input:focus  { border-color: #2D6A4F; }
+.donate-btn                 { width: 100%; padding: 14px; background: #F4A261; color: #fff; border: none; border-radius: 999px; font-size: 15px; font-weight: 500; cursor: pointer; font-family: 'Outfit', sans-serif; transition: 0.2s; }
+.donate-btn:hover           { background: #e08030; }
+.donate-secure              { font-size: 12px; color: #5a7a5a; text-align: center; margin-top: 10px; }
+
+/* ── DONATE NOTES ── */
+.donate-note                { background: #e8f5ee; border-radius: 0 14px 14px 0; border-left: 3px solid #2D6A4F; padding: 1.25rem 1.5rem; width: 100%; }
+.donate-note.amber          { background: #fef3ea; border-left-color: #F4A261; }
+.donate-note p              { font-size: 14px; color: #2D6A4F; line-height: 1.7; }
+.donate-note strong         { font-weight: 500; color: #2D6A4F; display: block; margin-bottom: 4px; }
+.donate-note.amber p        { color: #5a7a5a; }
+.donate-note.amber strong   { color: #e08030; }
+
+/* ── FUNDS SECTION ── */
+.funds                      { background: #2D6A4F; padding: 4.5rem 80px; }
+.funds .section-label       { color: rgba(244,162,97,0.9); }
+.funds .section-title       { color: #fff; margin-bottom: 0.75rem; }
+.funds .section-body        { color: rgba(255,255,255,0.75); margin-bottom: 0; }
+.funds-grid                 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 2.5rem; }
+.fund-card                  { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 2rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.fund-icon                  { width: 52px; height: 52px; border-radius: 14px; background: rgba(244,162,97,0.2); display: flex; align-items: center; justify-content: center; font-size: 24px; }
+.fund-title                 { font-size: 17px; font-weight: 500; color: #fff; }
+.fund-desc                  { font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.7; flex: 1; }
+.fund-amount                { display: inline-block; font-size: 12px; font-weight: 500; padding: 6px 16px; border-radius: 999px; background: rgba(244,162,97,0.2); color: #F4A261; margin-top: 0.5rem; width: fit-content; }
+
+/* ── BENEFITS SECTION ── */
+.benefits                   { padding: 4.5rem 80px; background: #fff; }
+.benefits-grid              { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: center; }
+.benefits-img               { background: #e8f5ee; border-radius: 20px; height: 560px; display: flex; align-items: center; justify-content: center; font-size: 90px; position: relative; overflow: hidden; }
+.benefits-img::before       { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 5px; background: #F4A261; }
+.benefits-img img           { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
+.benefits-content           { display: flex; flex-direction: column; gap: 1rem; }
+.benefits-list              { display: flex; flex-direction: column; gap: 16px; margin-top: 0.5rem; }
+.benefit-item               { display: flex; align-items: flex-start; gap: 16px; padding: 1.25rem; background: #F9F3E3; border: 1px solid rgba(45,106,79,0.1); border-radius: 14px; transition: border-color 0.2s; }
+.benefit-item:hover         { border-color: #2D6A4F; }
+.benefit-icon               { width: 46px; height: 46px; border-radius: 12px; background: #e8f5ee; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+.benefit-title              { font-size: 15px; font-weight: 500; color: #2D6A4F; margin-bottom: 4px; }
+.benefit-desc               { font-size: 13px; color: #5a7a5a; line-height: 1.7; }
+
+/*FORM FOR CONTRIBUTE PAGE*/
+/* Remove the green from the form itself */
+form                        { background: transparent; border-radius: 0; }
+/* Instead wrap your form in a card div */
+.form-card                  { background: #2D6A4F; border-radius: 20px; padding: 2rem; }
+/* Labels sit cleanly on green background */
+.form-label                 { color: #F4A261; font-size: 13px; font-weight: 500; display: block; margin-bottom: 6px; }
+/* Inputs are white boxes */
+.form-input                 { width: 100%; padding: 11px 14px; border: none; border-radius: 10px; font-size: 14px; font-family: 'Outfit', sans-serif; color: #1a2e1a; background: #fff; outline: none; margin-bottom: 16px; display: block; }
+/* Select dropdown */
+select.form-input           { cursor: pointer; }
+/* Textarea */
+textarea.form-input         { height: 120px; resize: none; }
+/* Submit button */
+.form-submit                { width: 100%; padding: 13px; background: #F4A261; color: #fff; border: none; border-radius: 999px; font-size: 15px; font-weight: 500; cursor: pointer; font-family: 'Outfit', sans-serif; transition: background 0.2s; margin-top: 4px; }
+.form-submit:hover          { background: #e08030; }
+.form-section {display: flex;align-items: center;   /* aligns vertically */gap: 40px;             /* space between form & text */padding: 40px;}
+.side-text {flex: 1;font-size: 24px;color: #2f5d50; /* adjust to your theme */font-weight: 500;}

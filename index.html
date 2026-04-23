@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--The home page must have a logo at the top left corner of the web page.-->
+<!---->
+<HTML>
+    <HEAD>
+        <TITLE>Set & Thrive</TITLE> <!--This sets the title of the page which will be the same as the name of the NGO-->
+        <LINK rel="stylesheet" href="styles/styles.css"> <!--Connects the html home browser to the CSS to change styles, fonts and colours-->
+    </HEAD>
+<BODY>
+    <nav style="display: flex; align-items: center; justify-content: space-between; padding: 0px 0px; background: whitesmoke; border-bottom: 1px solid #ddd; width: 100%;"><!--This creates the logo to the top left corner of the web page-->
+        <div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <IMG src="images/Set and Thrive Logo.png" width = 100 height = 100> <!--This set the size of the logo shown in the web page taking the logo image from the images file-->
+                <div style="display:flex; flex-direction:column;"> <!--This line sets NGO name next to the logo and the slogan below the name of tye NGO.-->
+                    <h1 style="font-size:18px; font-weight:600; color:#2D6A4F; font-family:Georgia,serif; "> Set <span style="color: #F4A261;">&</span> Thrive</h1> <!--This creates the name of the logo and font and color of the logo-->
+                    <p style="font-size:11px; color:#2D6A4F; font-style:italic; margin:0; line-height:1; "> Set the intention. Thrive together.</p>
+                </div>
+            </div>
+        </div>
+            <!--This create a search bar-->
+        <div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 999px; padding: 6px 16px; background: whitesmoke; width: 600px;"> <!--So this creates the search button in between the menu navigation bar and the logo-->
+            <input type="text" 
+            placeholder="Search..."
+            style="border: none; outline: none; background: transparent; font-size: 13px; width: 100%; color: #2D6A4F;"> <!--This sets the placeholder text inside the search input button-->
+            <span style="color:#2D6A4F; font-size:16px; cursor:pointer;">&#128269;</span>
+        </div>
+        <!--This creates the navigation menu -->
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 28px; align-items: center;">
+            <li><a href="index.html" style="text-decoration: none; color:#2D6A4F; font-size:14px; font-weight:lighter;">Home</a></li> <!--This is my home page which describes whta my NGO does-->
+            <li><a href="about.html" style="text-decoration:none; color:#2D6A4F ; font-size:14px; font-weight:lighter;">About us</a></li> <!--This is my about page which gives more details and interventions that this NGO undertakes.-->
+            <li><a href="casestudies.html" style="text-decoration:none; color:#2D6A4F; font-size:14px; font-weight:lighter">Case Studies</a></li> <!--This is where we will find case studies which describe a few particular projects or individuals which have been impacted by the NGO.-->
+            <li><a href="donate.html" style="text-decoration:none; color:#2D6A4F; font-size:14px; font-weight:lighter">Participate</a></li> <!--This is the participate page which describes how individuals or companies can participate in the work of the NGO, e.g. donating money or goods, volunteering or attending fundraising events.-->
+            <li><a href="contacts.html" style="text-decoration:none; color:#2D6A4F; font-size:14px; font-weight:lighter">Contacts</a></li> <!--This is the contact page which provides contact information, e.g. physical and postal addresses, a map, directions, contact numbers, etc.-->
+                    
+        </ul>
+    </nav>
+    <section class="hero"><!--Creating a hero class/tab to make the bar where the NGO describes itself.-->
+        <div>
+            <div class="hero-tag">Welcome to Set & Thrive</div>
+            <h1 class="hero-title" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Where <span style="color: #F4A261;">intention</span></BR> meets real</BR> connection.</h1> <!--This creates the hero title with different colours.-->
+            <p class="hero-desc">A safe space to learn how to show up fully, for yourself and for others. We help people build relationships rooted in reciprocity, honesty, respect and mutual growth by learning to set boundaries, respecting other people's times and efforts, and thrive together.</p> <!--This describes what my NGO is about. -->
+            <div class="hero-btns">
+                <a href="donate.html" class="btn-primary">Join us now</a> <!--Creating buttons to the other pages like the participate page-->
+                <a href="about.html" class="btn-outline">Learn more</a>
+            </div>
+        </div>
+    
+        <div class="hero-visual">
+            <span style="font-size: 120px;">🌱</span>
+        </div>
+    </section>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-num">25<span>+</span></div>
+            <div class="stat-label">Core values taught</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Community programs</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Pillars of growth</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">1</div>
+            <div class="stat-label">Powerful mission</div>
+        </div>
+
+    </div>
+    <section class="problem">
+        <div>
+            <img src="images/one sided friendship.jpeg" style="width: 100%; height: 340px; object-fit: cover; border-radius: 20px;"> <!--I have created an image which describes an example of what the NGO is about.-->
+        </div>
+        <div>
+            <div class="section-label" style="color:#F4A261; font-size:smaller;">THE PROBLEM</div>
+            <h1 class="section-title" style="color:#2D6A4F; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">People are connected but not truly present.</h1>
+            <p class="section-body" style="color:#2D6A4F">We live in a world where people overcommit, underdeliver, and lose meaningful relationships<BR> along the way. Set & Thrive exists to change that.</p>
+                <div class="problem-list">
+                    <div class="problem-item">
+                        <div class="problem-dot"></div>
+                        <span style="color:#2D6A4F">Lack of boundaries quietly destroy friendships and self-worth</span>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-dot"></div>
+                        <span style="color:#2D6A4F">Wasted time signals a lack of respect for others</span>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-dot"></div>
+                        <span style="color:#2D6A4F">Emotional unavailability creates distance in relationships</span>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-dot"></div>
+                        <span style="color:#2D6A4F">One sided friendships drain your energy and peace</span>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+    <h4><P class="title2" style="color:#F4A261; font-size: smaller; font-weight: lighter;">WHAT WE STAND FOR</h4>
+    <h1 class="subtitle1" style="color:#2D6A4F; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Three pillars, one purpose.</h1>
+    <section class="pillars">
+        <div class="pillars-grid" style>
+            <div class="pillar">
+                <div class="pillar-icon">⏰</div>
+                <div class="pillar-title">Time & respect</div>
+                <div class="pillar-desc">Honouring your time, and others' is the first act of real respect.</div>
+            </div>
+
+            <div class="pillar">
+                <div class="pillar-icon">🤝</div>
+                <div class="pillar-title">Emotional intelligence</div>
+                <div class="pillar-desc">Active listening, emotional safety, and genuine presence in every relationship.</div>
+            </div>
+
+            <div class="pillar">
+                <div class="pillar-icon">🌱</div>
+                <div class="pillar-title">Relational integrity</div>
+                <div class="pillar-desc">Accountability, honesty, and mutual effort are the roots of a lasting connection.</div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <P class="title2" style="color:#F4A261; font-size: smaller; font-weight: lighter;">OUR MISSION</h4>
+
+        <p class="mission-quote" style="background-color:whitesmoke">"To empower individuals to <span>set intentional boundaries</span>, manage their time with purpose, and build relationships rooted in <span>reciprocity, honesty, and mutual growth.</span>"
+        </p>
+    </section>
+
+
+    <h4><P class="title4" style="color:#F4A261; font-size: smaller; font-weight: lighter;">WHAT WE DO</h4>
+        <h1 class="subtitle1" style="color:#2D6A4F; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Our Programmes</h1>
+        <section class="pillars">
+            <div class="pillars-grid">
+
+                <div class="pillar">
+                    <div class="pillar-title">Boundary Workshops:</div>
+                    <div class="pillar-desc">Know your limits. Communicate them. We host practical sessions on setting and communicating healthy boundaries in friendships, family and the workplace. Teaching people how to gracefully navigate and exit emotionally draining friendships.</div>
+      
+                </div>
+
+                <div class="pillar">
+                    <div class="pillar-title">Time Circles:</div>
+                    <div class="pillar-desc">Your time reflects your values. Community conversations about respecting your time and showing up consistently and intentionally for others.</div>
+      
+                </div>
+
+                <div class="pillar">
+                    <div class="pillar-title">Relationship Audits:</div>
+                    <div class="pillar-desc">Not every relationship deserves the same energy. Guided self-reflection tools to evaluate the health, balance, and reciprocity of your most important relationships.</div>
+                </div>
+
+            </div>
+        </section>
+    <footer> <!--This is a footer, the section at the bottom which contains all the links to all the webpages-->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Set <span>&</span> Thrive</h2>
+                <p style="font-style:italic;font-size:11px;">Set the intention. Thrive together.</p>
+                <p>Building healthier, more intentional relationships.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="casestudies.html">Case Studies</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="donate.html">Paricipate</a></li>
+                    <li><a href="contacts.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="contacts.html">Instagram</a></li>
+                    <li><a href="contacts.html">Facebook</a></li>
+                    <li><a href="contacts.html">WhatsApp</a></li>
+                    <li><a href="contacts.html">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Set & Thrive NGO. All rights reserved.</p>
+            <p>Designed with 💛 for people who choose to show up.</p>
+        </div>
+    </footer>
+</BODY>
+</HTML>

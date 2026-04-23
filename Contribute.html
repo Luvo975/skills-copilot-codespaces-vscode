@@ -1,0 +1,119 @@
+<!--Consider the NGO website that you worked on in Assignment 4.
+Create a new “Contribute” page which allows a user of the website to enter information about how they intend to contribute.
+This should be done with an HTML form.
+A very popular resource for learning web programming is W3Schools (www.w3schools.com).
+To learn how to create HTML Forms follow the following link:https://www.w3schools.com/html/html_forms.asp.
+On your form, you should have entries to have a user enter their Name, Surname, Email Address, and Telephone Number with a simple text input.
+A drop-down list to indicate their Contribution, with options for Volunteering, Donating Money, and Donating Goods.
+A text area for any Comments, and a button to Submit the form.
+Also, ensure the page has the same style as your overall website.
+Note: You are not expected to process the form, i.e. store or do anything with the information which the user entered, so you don’t need to code the form action attribute.-->
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Contribute</TITLE>
+        <LINK rel="stylesheet" href="styles/styles.css">
+    </HEAD>
+    <BODY>
+        <nav style="display: flex; align-items: center; justify-content: space-between; padding: 0px 0px; background: whitesmoke; border-bottom: 1px solid #ddd; width: 100%;"><!--This creates the logo to the left-->
+            <div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <IMG src="images/Set and Thrive Logo.png" width = 100 height = 100>
+                        <div style="display:flex; flex-direction:column;">
+
+                        </div>
+                        <h1 style="font-size:18px; font-weight:600; color:#2D6A4F; font-family:Georgia,serif; "> Set <span style="color: #F4A261;">&</span> Thrive</h1>
+                        <p style="font-size:11px; color:#2D6A4F; font-style:italic; margin:0; line-height:1; "> Set the intention. Thrive together.</p>
+                    </div>
+                </div>
+            </div>
+            <!--This create a search bar-->
+            <div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 999px; padding: 6px 16px; background: whitesmoke; width: 600px;">
+                <input type="text" placeholder="Search..." style="border: none; outline: none; background: transparent; font-size: 13px; width: 100%; color: #2D6A4F;"><span style="color:#2D6A4F; font-size:16px; cursor:pointer;">&#128269;</span>
+            </div>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 28px; align-items: center;">
+                <li><a href="index.html" style="text-decoration: none; color:#2D6A4F; font-size:14px; font-weight:lighter;">Home</a></li>
+                <li><a href="about.html" style="text-decoration:none; color:#2D6A4F ; font-size:14px; font-weight:lighter;">About us</a></li> <!--This is my about page which gives more details and interventions that this NGO undertakes.-->
+                <li><a href="casestudies.html" style="text-decoration:none; color:#2D6A4F; font-size:14px; font-weight:lighter">Case Studies</a></li> <!--This is where we will find case studies which describe a few particular projects or individuals which have been impacted by the NGO.-->
+                <li><a href="donate.html" style="text-decoration:none; color:#2D6A4F; font-size:14px; font-weight:lighter">Participate</a></li> <!--This is the participate page which describes how individuals or companies can participate in the work of the NGO, e.g. donating money or goods, volunteering or attending fundraising events.-->
+                <li><a href="contacts.html" style="text-decoration:none; color:#2D6A4F; font-size:14px; font-weight:lighter">Contacts</a></li> <!--This is the contact page which provides contact information, e.g. physical and postal addresses, a map, directions, contact numbers, etc.-->
+                <li><a href="Contribute.html" style="text-decoration:none; color:#2D6A4F; font-size:14px; font-weight:lighter">Contrubute</a></li> <!--This will allow the user to choose how they want to contribute to our NGO.-->
+            </ul>
+        </nav>
+        <section class="donate-hero">
+            <div class="hero-tag">Invest in people. Invest in relationships.</div>
+            <h1 class="donate-hero-title">Give what you can. In <span>whatever</span> form you can.</h1>
+            <p class="donate-hero-desc">You do not need to give a lot. You just need to give what you can. Volunteerism, every dollar, every good funds workshops, resources, and community programs that change real lives.</p>
+        </section>
+        <section class="donate-section">
+            <div class="donate-info">
+                <div class="section-label">PARTICIPATION FORM</div>
+                <!--Creatinga a form-->
+                <div class="form-card">
+                    <p class="section-label">Participate at Set & Thrive</p>
+                    <form class="contribute-form">
+                        <div class="form-group">
+                            <label class="form-label" for="fname">Enter your first name:</label>
+                            <input class="form-input" type="text" id="fname" placeholder="Your first name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="sname">Enter your last name:</label>
+                            <input class="form-input" type="text" id="sname" placeholder="Your last name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Enter your email address:</label>
+                            <input class="form-input" type="email" id="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="num">Enter your contact number:</label>
+                            <input class="form-input" type="tel" id="num" placeholder="+27 00 000 0000">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="method">How would you like to contribute?:</label>
+                            <select class="form-input" id="method" name="method">
+                                <option value="">Select an option</option>
+                                <option value="volunteer">Volunteer</option>
+                                <option value="money">Donate money</option>
+                                <option value="goods">Donate goods</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="notes">Notes for this section:</label>
+                            <textarea class="form-input" id="notes" placeholder="Any additional notes..."></textarea>
+                        </div>
+                        <button class="form-submit" type="submit">Submit contribution 💛</button>
+                    </form>
+                </div>
+        </section>
+        <footer> <!--This is a footer, the section at the bottom which contains all the links to all the webpages-->
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>Set <span>&</span> Thrive</h2>
+                    <p style="font-style:italic;font-size:11px;">Set the intention. Thrive together.</p>
+                    <p>Building healthier, more intentional relationships.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="casestudies.html">Case Studies</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="donate.html">Paricipate</a></li>
+                        <li><a href="contacts.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col"><h4>Connect</h4>
+                    <ul>
+                        <li><a href="contacts.html">Instagram</a></li>
+                        <li><a href="contacts.html">Facebook</a></li>
+                        <li><a href="contacts.html">WhatsApp</a></li>
+                        <li><a href="contacts.html">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 Set & Thrive NGO. All rights reserved.</p>
+                <p>Designed with 💛 for people who choose to show up.</p>
+            </div>
+        </footer>
+    </BODY>
+</HTML>

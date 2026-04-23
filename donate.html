@@ -1,0 +1,174 @@
+<HTML>
+<HEAD>
+  <TITLE>Donate</TITLE>
+  <LINK rel="stylesheet" href="styles/styles.css">
+</HEAD>
+<BODY>
+  <nav style="display: flex; align-items: center; justify-content: space-between; padding: 0px 0px; background: whitesmoke; border-bottom: 1px solid #ddd; width: 100%;"><!--This creates the logo to the left-->
+    <div>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <IMG src="images/Set and Thrive Logo.png" width = 100 height = 100>
+        <div style="display:flex; flex-direction:column;">
+          <h1 style="font-size:18px; font-weight:600; color:#2D6A4F; font-family:Georgia,serif; "> Set <span style="color: #F4A261;">&</span> Thrive</h1>
+          <p style="font-size:11px; color:#2D6A4F; font-style:italic; margin:0; line-height:1; "> Set the intention. Thrive together.</p>
+        </div>
+      </div>
+    </div>
+    <!--This create a search bar-->
+    <div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 999px; padding: 6px 16px; background: whitesmoke; width: 600px;">
+      <input type="text"
+      placeholder="Search..."
+      style="border: none; outline: none; background: transparent; font-size: 13px; width: 100%; color: #2D6A4F;">
+      <span style="color:#2D6A4F; font-size:16px; cursor:pointer;">&#128269;</span>
+    </div>
+    <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 28px; align-items: center;">
+      <li><a href="index.html" style="text-decoration: none; color:#2D6A4F; font-size:14px; font-weight:lighter;">Home</a></li>
+      <li><a href="about.html" style="text-decoration:none; color:#2D6A4F ; font-size:14px; font-weight:lighter;">About us</a></li> <!--This is my about page which gives more details and interventions that this NGO undertakes.-->
+      <li><a href="casestudies.html" style="text-decoration:none; color:#2D6A4F; font-size:14px; font-weight:lighter">Case Studies</a></li> <!--This is where we will find case studies which describe a few particular projects or individuals which have been impacted by the NGO.-->
+      <li><a href="donate.html" style="text-decoration:none; color:#2D6A4F; font-size:14px; font-weight:lighter">Participate</a></li> <!--This is the participate page which describes how individuals or companies can participate in the work of the NGO, e.g. donating money or goods, volunteering or attending fundraising events.-->
+      <li><a href="contacts.html" style="text-decoration:none; color:#2D6A4F; font-size:14px; font-weight:lighter">Contacts</a></li> <!--This is the contact page which provides contact information, e.g. physical and postal addresses, a map, directions, contact numbers, etc.-->
+    </ul>
+  </nav>
+  <section class="donate-hero">
+    <div class="hero-tag">Make a difference today</div>
+    <h1 class="donate-hero-title">Every donation helps someone <span>show up</span> for themselves.
+    </h1>
+    <p class="donate-hero-desc">You do not need to give a lot. You just need to give what you can. Every rand, every dollar, every contribution funds workshops, resources, and community programs that change real lives.</p>
+  </section>
+  <section class="donate-section">
+    <div class="donate-info">
+      <div class="section-label">Donate today</div>
+      <h2 class="donate-title">Give what you can. 💛</h2>
+      <p class="donate-desc">There is no minimum donation at Set & Thrive. Whether you give R20 or R2000 — every single contribution goes directly towards helping people build healthier relationships and reclaim their peace.</p>
+    </div>
+    <!-- Creates at the RIGHT — amount selector -->
+    <div class="amount-box">
+      <div class="amount-title">Choose your donation amount</div>
+      <div class="amount-grid">
+        <button class="amount-btn" 
+        onclick="selectAmount(this)">R50</button>
+        <button class="amount-btn"
+        onclick="selectAmount(this)">R100</button>
+        <button class="amount-btn selected"
+        onclick="selectAmount(this)">R200</button>
+        <button class="amount-btn"
+        onclick="selectAmount(this)">R500</button>
+        <button class="amount-btn"
+        onclick="selectAmount(this)">R1 000</button>
+        <button class="amount-btn"
+        onclick="selectAmount(this)">Other</button>
+      </div>
+      <div class="amount-custom">
+        <label>Or enter your own amount:</label>
+        <input type="number" placeholder="R 0.00">
+      </div>
+      <button class="donate-btn">Donate now 💛</button>
+      <p class="donate-secure">🔒 Secure payment — your details are protected</p>
+    </div>
+
+  </section>
+  <!-- Note card 1 — green colour -->
+  <div class="donate-note">
+    <p>
+      <strong>100% of your donation</strong> goes directly to our programs, workshops, and free resources. We are a nonprofit, no profits, no shareholders, just people helping people.
+    </p>
+  </div>
+
+<!-- Note card 2 — amber colour -->
+<div class="donate-note amber">
+  <p>
+    <strong>Tax deductible:</strong> 
+    Set & Thrive is a registered nonprofit. 
+    Your donation may qualify for a tax 
+    deduction. Contact us for a Section 18A 
+    certificate.
+  </p>
+</div>
+
+<section class="funds">
+  <div class="section-label">Your impact</div>
+  <h2 class="section-title">What your donation funds</h2>
+  <p class="section-body">Every contribution goes directly to one 
+  of these three areas. Nothing is wasted. 
+  Everything counts.</p>
+
+  <div class="funds-grid">
+
+    <!-- Card 1 -->
+    <div class="fund-card">
+      <div class="fund-icon">🏫</div>
+      <div class="fund-title">Workshops & programs</div>
+      <div class="fund-desc">Your donation funds our Boundary 
+      Workshops, Time Circles, and Relationship 
+      Audits — making them accessible and 
+      affordable for everyone regardless 
+      of income.</div>
+      <span class="fund-amount">
+        R200 funds one workshop spot
+      </span>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="fund-card">
+      <div class="fund-icon">📚</div>
+      <div class="fund-title">Free resources</div>
+      <div class="fund-desc">Guides, toolkits, articles, and 
+      newsletters that we give away completely 
+      free. Your donation keeps our resource 
+      hub running and growing.</div>
+      <span class="fund-amount">
+        R50 funds one resource pack
+      </span>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="fund-card">
+      <div class="fund-icon">🌱</div>
+      <div class="fund-title">Community outreach</div>
+      <div class="fund-desc">Taking Set & Thrive to schools, 
+      townships, and underserved communities 
+      who need these tools the most but cannot 
+      afford to access them.</div>
+      <span class="fund-amount">
+        R500 funds one community visit
+      </span>
+    </div>
+
+  </div>
+</section>
+     <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Set <span>&</span> Thrive</h2>
+                <p style="font-style:italic;font-size:11px;">Set the intention. Thrive together.</p>
+                <p>Building healthier, more intentional relationships.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="casestudies.html">Case Studies</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="donate.html">Paricipate</a></li>
+                    <li><a href="contacts.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="contacts.html">Instagram</a></li>
+                    <li><a href="contacts.html">Facebook</a></li>
+                    <li><a href="contacts.html">WhatsApp</a></li>
+                    <li><a href="contacts.html">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Set & Thrive NGO. All rights reserved.</p>
+            <p>Designed with 💛 for people who choose to show up.</p>
+        </div>
+    </footer>
+
+
+    </BODY>
+</HTML>
